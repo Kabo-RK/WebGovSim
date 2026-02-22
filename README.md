@@ -1,1 +1,1 @@
-hello
+WebGovSim is Web Government Simulator.
