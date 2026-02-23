@@ -103,7 +103,6 @@
         .modal-box.victory h2 { color: #006600; }
         .modal-box p { font-size: 1.1em; line-height: 1.4; margin-bottom: 25px; font-weight: bold; }
         
-        /* NEWS TICKER */
         .news-ticker {
             position: fixed; bottom: 0; left: 0; width: 100%; background: #111; border-top: 2px solid #444;
             color: #00ff00; font-family: monospace; font-size: 1.1em; padding: 8px 0; white-space: nowrap; 
@@ -113,31 +112,28 @@
         .ticker-highlight { color: #ffffff; background: #cc0000; padding: 0 5px; font-weight: bold;}
         @keyframes scrollTicker { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
         
-        /* DESKTOP AD CONTAINER */
         .ad-container {
             position: fixed; right: 20px; top: 50%; transform: translateY(-50%);
             width: 160px; height: 600px; background: transparent;
             display: flex; align-items: center; justify-content: center; z-index: 10;
         }
 
-        /* MOBILE AD CONTAINER - BULLETPROOFED */
         .mobile-ad-container {
             display: none; 
             position: fixed; 
             bottom: 0; 
             left: 0; 
             width: 100%; 
-            height: 50px !important; /* Forces strict height */
+            height: 50px !important;
             max-height: 50px !important; 
-            background: #000000; /* Solid background prevents transparency bleed */
+            background: #000000;
             align-items: center; 
             justify-content: center; 
             text-align: center; 
-            z-index: 9999 !important; /* Keeps ad below modals but above game */
-            overflow: hidden !important; /* HIDES any oversized Adzilla images */
+            z-index: 9999 !important;
+            overflow: hidden !important;
         }
         
-        /* Forces any child elements (like the Adzilla grid) to shrink or clip */
         .mobile-ad-container * {
             max-height: 50px !important;
         }
@@ -145,8 +141,8 @@
         @media (max-width: 1450px) {
             .ad-container { display: none; }
             .mobile-ad-container { display: flex; }
-            .news-ticker { bottom: 50px !important; } /* Pushes ticker exactly above the 50px ad */
-            body { padding-bottom: 120px; } /* Ensures user can scroll down to the bottom stats */
+            .news-ticker { bottom: 50px !important; }
+            body { padding-bottom: 120px; }
         }
     </style>
 </head>
@@ -306,8 +302,16 @@
     <div class="news-ticker"><span class="ticker-text" id="ticker-content"><span class="ticker-highlight">BREAKING NEWS</span> OVAL OFFICE WELCOMES NEW ADMINISTRATION. PRESS AWAITS FIRST MOVES.</span></div>
 
     <div class="mobile-ad-container" id="mobile-ad-space">
-        <script async="async" data-cfasync="false" src="https://pl28765542.effectivegatecpm.com/1057d25b65668ec4dc65fe55a38ce88c/invoke.js"></script>
-        <div id="container-1057d25b65668ec4dc65fe55a38ce88c"></div>
+        <script>
+          atOptions = {
+            'key' : 'c33d7f37d19daa206023494aefb58a6e',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/c33d7f37d19daa206023494aefb58a6e/invoke.js"></script>
     </div>
 
     <script>
